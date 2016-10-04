@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="6" name="Failed suite [leads]">
+  <test name="test(failed)">
+    <classes>
+      <class name="leads.Createlead">
+        <methods>
+          <include name="connectToDatabase"/>
+          <include name="beforeClass"/>
+          <include name="Leadcreate"/>
+          <include name="startReport"/>
+        </methods>
+      </class> <!-- leads.Createlead -->
+      <class name="leads.Edit">
+        <methods>
+          <include name="Leadcreate"/>
+        </methods>
+      </class> <!-- leads.Edit -->
+      <class name="leads.Merge">
+        <methods>
+          <include name="Leadcreate"/>
+        </methods>
+      </class> <!-- leads.Merge -->
+      <class name="leads.Deletelead">
+        <methods>
+          <include name="LeadDelete"/>
+        </methods>
+      </class> <!-- leads.Deletelead -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [leads] -->

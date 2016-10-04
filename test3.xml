@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<groups>
+		<run>
+			<exclude name="smoke"></exclude>
+			
+			
+			
+		<include name="regression"></include>
+		</run>
+	</groups>
+
+	<test name="groups">
+		<classes>
+			<class name="groups.Createcontact" />
+			
+			<class name="groups.Mergecontact" />
+			
+			<class name="groups.DeleteContact" />
+		</classes>
+	</test> <!-- groups -->
+</suite> <!-- Suite -->

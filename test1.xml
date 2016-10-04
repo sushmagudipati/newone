@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<parameter name="url" value="http://demo1.opentaps.org"/>
+<parameter name="username" value="DemoCSR"/>
+<parameter name="password" value="crmsfa"/>
+
+
+  <test name="sample">
+    <classes>
+      <class name="leads.Createlead"/>
+      <class name="leads.Edit"/>
+     <!--  <class name="leads.Deletelead"/>
+      <class name="leads.Merge"/> -->
+    </classes>
+  </test> <!-- sample -->
+</suite> <!-- Suite -->
